@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative">
       <RevealY duration={0.5} startPos={20} delay={0.6} once={true}>
-      <a href="https://drive.google.com/file/d/1l2QQdPUiW0Cv4EdLzS52JuU8LuMJfKA1/view?usp=sharing"
+      <a href="https://drive.google.com/file/d/1udwdYYo76iqqgZOVCsIsFPdUBxDgsjG0/view?usp=sharing"
         target="_blank">      
           <MagicButton
           title='Download CV'

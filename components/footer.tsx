@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-20 md:mt-40 md:flex-row flex-col justify-between items-center text-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          © 2025 Jonathan Kullman. Portfolio version 1.0.
+          © 2026 Jonathan Kullman. Portfolio version 1.1.
         </p>
 
         <div className=" max-md:pt-6 md:max-w-6xl items-center font-mono text-sm flex z-[200] justify-end relative max-md:mr-6">
