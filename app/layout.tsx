@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
-  title: "Jonathan's Developer Portfolio",
-  description: "Discover Jonathan Kullman's portfolio highlighting creative designs, innovative projects, and his expertise as a software developer.",
+  title: "Jonathan Kullman | Software Engineer",
+  description:
+    "Software Engineer portfolio showcasing production experience in C# .NET, React, TypeScript, SQL, and end-to-end product delivery.",
 };
 
 export default function RootLayout({
@@ -17,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+      <body className={`${manrope.variable} ${spaceGrotesk.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

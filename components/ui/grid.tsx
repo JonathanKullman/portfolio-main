@@ -6,8 +6,10 @@ import { RevealY } from './RevealY'
 
 const Grid = () => {
   return (
-    <section id='about' className='md:py-20 md:pt-28 relative'>
+    <section id='about' className='md:py-20 md:pt-24 relative'>
     <RevealY duration={0.5} startPos={10} delay={1} once={true}>
+        <p className='section-kicker mb-3'>About</p>
+      <h2 className='heading mb-10'>Current Snapshot</h2>
 
         <BentoGrid className='w-full '>
         {gridItems.map(({id, title, description, className, img, imgClassName, titleClassName, spareImg }) => (

@@ -72,6 +72,13 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-manrope), sans-serif;
+    background:
+      radial-gradient(circle at 12% 10%, rgba(20, 184, 166, 0.2), transparent 28%),
+      radial-gradient(circle at 82% 6%, rgba(14, 165, 233, 0.16), transparent 32%),
+      radial-gradient(circle at 50% 92%, rgba(34, 197, 94, 0.14), transparent 36%),
+      #050816;
+    min-height: 100vh;
   }
   button {
     @apply active:outline-none;
@@ -80,7 +87,9 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-4xl md:text-5xl text-center tracking-tight;
+    font-family: var(--font-space-grotesk), sans-serif;
+    letter-spacing: -0.02em;
   }
 
   .black-gradient {
@@ -89,7 +98,7 @@
 }
 
 .animated-text {
-  background: linear-gradient(-45deg, #e42f9e, #444ff1, #c92a78, #0047cc);
+  background: linear-gradient(-45deg, #14b8a6, #06b6d4, #22c55e, #2dd4bf);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -109,4 +118,30 @@
 
 .container {
   position: relative; /* or position: fixed; or position: absolute; */
+}
+
+.section-kicker {
+  font-family: var(--font-space-grotesk), sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  color: #7dd3fc;
+  text-align: center;
+}
+
+.skills-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  width: max-content;
+  animation: skills-marquee 28s linear infinite;
+}
+
+@keyframes skills-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.45rem));
+  }
 }

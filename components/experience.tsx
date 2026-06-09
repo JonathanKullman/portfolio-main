@@ -7,107 +7,86 @@ import { RevealY } from "./ui/RevealY";
 
 type Props = {};
 
-const words = ["Experiences", "Timeline"];
+const words = ["Timeline", "Milestones"];
 
 const dummyContent = [
    {
-    title: "Software Developer | Nov 2024 - Present",
+    title: "Software Engineer | Nov 2024 - Present",
     description: (
       <>
         <div className="flex flex-col">
           <p
             className="font-bold font-sans mb-2 text-lg md:text-xl"
             style={{
-              backgroundImage: "linear-gradient(to right, #fff, #6251ff)",
+              backgroundImage: "linear-gradient(to right, #ffffff, #2dd4bf)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
-              display: "inline-block", // Ensures gradient respects text size
+              display: "inline-block",
             }}
           >
             Riverty AB
           </p>
           <p className="font-sans">
-            Working as a fullstack developer with responsibilities spanning both backend and frontend development. 
-            Communicates and delivers solutions in both Swedish and English as part of a cross-functional team.
+            Built an internal administrative platform from the ground up that is now used daily across multiple teams.
+            I was responsible for architecture, database design, backend APIs, frontend in Blazor, authentication and role-based access,
+            and CI/CD pipelines in Azure DevOps. I also develop and maintain business-critical .NET services in production.
           </p>
         </div>
       </>
     ),
-    frameworks: ["C#", ".NET", "SQL", "Blazor", "Git", "..."],
+    frameworks: ["C#", ".NET", "SQL Server", "Blazor", "Azure", "Azure DevOps"],
   },
   {
-    title: "Freelance/Hobby Project | 2024",
+    title: "Software Developer Internship (LIA) | 2021 - 2022",
     description: (
       <>
         <div className="flex flex-col">
           <p
             className="font-bold font-sans mb-2 text-lg md:text-xl"
             style={{
-              backgroundImage: "linear-gradient(to right, #fff, #6251ff)",
+              backgroundImage: "linear-gradient(to right, #ffffff, #2dd4bf)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
-              display: "inline-block", // Ensures gradient respects text size
+              display: "inline-block",
             }}
           >
-            Quicksleek
+            Vertiseit AB
           </p>
           <p className="font-sans">
-            A hobby project dedicated to building modern, responsive, and SEO-optimized websites using Next.js, Tailwind CSS, and React.
+            Contributed to full-stack development on customer projects with direct delivery responsibility.
+            Built frontend and backend features using JavaScript, C# .NET, Angular, Python, and MongoDB while
+            handling client communication and timeline commitments.
           </p>
         </div>
       </>
     ),
-    frameworks: ["Nextjs", "React", "Tailwind.CSS", "TypeScript"],
+    frameworks: ["JavaScript", "C#", ".NET", "Angular", "Python", "MongoDB"],
   },
   {
-    title: "Full-Stack Developer Intern | 2021 - 2022",
+    title: "Software Development Program (YH) | 2020 - 2022",
     description: (
       <>
         <p
           className="font-sans font-bold mb-2 text-xl"
           style={{
-            backgroundImage: "linear-gradient(to right, #fff, #6251ff)",
+            backgroundImage: "linear-gradient(to right, #ffffff, #2dd4bf)",
             WebkitBackgroundClip: "text",
             backgroundClip: "text",
             color: "transparent",
-            display: "inline-block", // Ensures gradient respects text size
-          }}
-        >
-          Vertiseit AB
-        </p>
-        <p className="font-sans">
-          Engaged in frontend and backend development, collaborated closely with
-          clients, and successfully managed project timelines for product
-          launches.
-        </p>
-      </>
-    ),
-    frameworks: ["C#", ".NET", "JavaScript", "Angular", "SQL"],
-  },
-  {
-    title: "Software Development Program | 2020 - 2022",
-    description: (
-      <>
-        <p
-          className="font-sans font-bold mb-2 text-xl"
-          style={{
-            backgroundImage: "linear-gradient(to right, #fff, #6251ff)",
-            WebkitBackgroundClip: "text",
-            backgroundClip: "text",
-            color: "transparent",
-            display: "inline-block", // Ensures gradient respects text size
+            display: "inline-block",
           }}
         >
           Campus Varberg
         </p>
         <p className="font-sans">
-          Comprehensive studies in C#, agile methodologies, OOP, database
-          management, advanced .NET, and web development.
+          Vocational higher education focused on C# .NET, software architecture,
+          agile delivery, databases, and modern web development.
         </p>
       </>
     ),
+    frameworks: ["C#", ".NET", "SQL", "Agile / Scrum"],
   },
 ];
 
@@ -115,12 +94,13 @@ const Experience = (props: Props) => {
   return (
     <section id="experience" className="pt-20 relative">
     <div className="flex flex-col relative justify-center items-center font-sans font-bold text-5xl mb-16 mt-6">
+    <p className="section-kicker mb-2">Experience</p>
     <RevealX duration={1} startPos={10} delay={0.1} once={true}>
       <FlipWords words={words} />
       </RevealX>
       <RevealX duration={1.4} startPos={0} delay={0.3} once={true}>
         <span className="font-normal text-lg mt-4 font-sans">
-          Here&apos;s a Timeline of What I&apos;ve Been Upto.
+          A quick look at where I have worked and what I have been responsible for.
         </span>
       </RevealX>
     </div>
@@ -132,11 +112,11 @@ const Experience = (props: Props) => {
               <div
                 className="text-2xl md:text-3xl font-bold mb-4 font-sans"
                 style={{
-                  backgroundImage: "linear-gradient(to right, #fff, #6251ff)",
+                  backgroundImage: "linear-gradient(to right, #ffffff, #2dd4bf)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   color: "transparent",
-                  display: "inline-block", // Ensures gradient respects text size
+                  display: "inline-block",
                 }}
               >
                 {item.title}
@@ -157,7 +137,7 @@ const Experience = (props: Props) => {
                     delay={index * 0.25} // Incremental delay for each item
                     once={true}
                   >
-                    <div className="bg-[#2d2594] bg-opacity-100 mt-4 mr-2 text-white rounded-[8px] font-sans text-sm w-fit px-2 py-0">
+                    <div className="bg-teal-500/90 mt-4 mr-2 text-slate-950 rounded-[8px] font-sans text-sm w-fit px-2 py-0">
                       {framework.split(",").map((item, subIndex) => (
                         <span key={subIndex}>{item.trim()}</span>
                       ))}

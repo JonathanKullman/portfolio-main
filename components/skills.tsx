@@ -3,49 +3,42 @@
 import React from "react";
 
 import { companies } from "@/data";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import { RevealY } from "./ui/RevealY";
 import { RevealX } from "./ui/RevealX";
 
 const Skills = () => {
+  const marqueeItems = [...companies, ...companies];
+
   return (
-    <section id="technologies" className=" max-md:py-16 py-28 flex flex-col relative">
+    <section id="technologies" className="max-md:py-16 py-24 flex flex-col relative">
       <RevealX duration={1.4} startPos={-20} delay={0} once={true}>
-      <h1 className="heading text-sm">
-        Technologies
+      <p className="section-kicker">Skills</p>
+      <h1 className="heading text-sm mt-2">
+        Tech I Work With Most
       </h1>
       </RevealX>
       <RevealY duration={1.4} startPos={0} delay={0.3} once={true}>
-      <HeroHighlight  className="text-center pt-2">
-      
-        Technologies and Languages I am Most&nbsp; 
-        <Highlight className="">
-        Experienced with.
-        </Highlight>
-    </HeroHighlight>
+      <p className="text-center pt-3 text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        I focus on a practical stack that lets me deliver quickly and maintain systems long-term.
+      </p>
     </RevealY>
 
-    <div className="flex flex-col items-center max-sm:mt-6 max-lg:mt-10 max-md:max-w-80 max-lg:max-w-2xl mx-auto">
-  <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16 max-lg:mt-10 mt-20">
-    {companies.map((company, index) => (
-      <RevealY
-        key={company.id}
-        duration={0.7}
-        startPos={-10}
-        delay={index * 0.2} // Incremental delay for each image
-        once={true}
-      >
-        <div className="flex md:max-w-40 max-w-40 gap-2">
-          <img
-            src={company.img}
-            alt={company.name}
-            className="md:w-20 w-20"
-          />
+    <RevealY duration={0.8} startPos={8} delay={0.2} once={true}>
+      <div className="mx-auto mt-12 w-full max-w-5xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="skills-marquee-track">
+          {marqueeItems.map((company, index) => (
+            <div
+              key={`${company.id}-${index}`}
+              className="flex h-24 w-24 shrink-0 items-center justify-center"
+              aria-label={company.name}
+              title={company.name}
+            >
+              <img src={company.img} alt={company.name} className="w-16 opacity-90" />
+            </div>
+          ))}
         </div>
-      </RevealY>
-    ))}
-  </div>
-</div>
+      </div>
+    </RevealY>
 
     </section>
   );

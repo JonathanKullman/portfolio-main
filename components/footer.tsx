@@ -21,15 +21,17 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
       <RevealY duration={1.2} startPos={30} delay={0} once={true}>
+        <p className="section-kicker mb-3">Contact</p>
         <h1 className="heading lg:max-w-[45vw]">
-        Interested in <span className="animated-text">work opportunities</span>? I&apos;d <span className="animated-text">love</span> to hear from you!
+        If my profile feels like a good fit,
+        <span className="animated-text"> let&apos;s talk</span>
         </h1>
         </RevealY>
         <HeroHighlight  className="text-center my-5">
         <RevealY duration={1.2} startPos={-10} delay={0.8} once={true}>
-        Reach out to me today and let&apos;s connect on how I can add&nbsp;
-        <Highlight className="font-semibold">
-        value for you.
+        I&apos;m always open to good conversations about product, code, and how to build things that last.&nbsp;
+        <Highlight className="font-semibold !bg-gradient-to-r !from-cyan-300/35 !to-teal-300/35 dark:!from-cyan-400/30 dark:!to-emerald-400/30 text-slate-100">
+        You can reach me directly by email.
         </Highlight>
     </RevealY>
 
@@ -38,7 +40,7 @@ const Footer = () => {
     <RevealY duration={1.2} startPos={0} delay={0.8} once={true}>
         <a className="max-md:pt-5" href="mailto:jontekull@gmail.com">
           <MagicButton
-            title="Let&apos;s get in touch"
+            title="Start a conversation"
             icon={<FaLocationArrow />}
             position="right"
             
@@ -48,7 +50,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-20 md:mt-40 md:flex-row flex-col justify-between items-center text-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          © 2026 Jonathan Kullman. Portfolio version 1.1.
+          © 2026 Jonathan Kullman. Software Engineer Portfolio.
         </p>
 
         <div className=" max-md:pt-6 md:max-w-6xl items-center font-mono text-sm flex z-[200] justify-end relative max-md:mr-6">

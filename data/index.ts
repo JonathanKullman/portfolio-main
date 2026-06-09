@@ -2,7 +2,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Experience", link: "#experience" },
-    { name: "Technologies", link: "#technologies" },
+    { name: "Skills", link: "#technologies" },
     { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
   ];
@@ -10,8 +10,8 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "Currently Employed as a Software Developer at Riverty AB",
-      description: "As part of the development team at Riverty AB, I work on building reliable, scalable software that powers modern financial services. I focus on writing clean code, enhancing developer experience, and delivering user-friendly solutions.",
+      title: "Currently working as a Software Engineer at Riverty AB",
+      description: "Main focus today is building and maintaining internal production systems used across multiple teams along with strong focus on API development and system-to-system/API integrations.",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full object-contain",
       titleClassName: "justify-end",
@@ -20,8 +20,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I am flexible and available for work, both remote or on-site.",
-      description: "",
+      title: "Open to software engineering opportunities",
+      description: "Based in Varberg, Sweden. Open to on-site, hybrid, or remote roles where I can contribute to real product outcomes.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -30,8 +30,8 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Reach Out to Me by Email. ",
-      description: "I look forward to be hearing from you.",
+      title: "Let us connect",
+      description: "Best way to reach me is by email. I usually reply quickly.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full max-w-96 text-center",
@@ -43,27 +43,12 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "QuickMation - Automated Workflows",
-      des: "A web-based SaaS application that automates workflows, reduces manual tasks, and optimizes operational efficiency. This solution streamlines processes and enhances productivity.",
-      img: "/quickmation_frame.png",
-      iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/prisma.svg"],
-      link: "No Demo Available",
-    },
-    {
-      id: 2,
-      title: "Apaztron Official Website - DJ",
-      des: "I had the pleasure of designing and developing the official website for Apaztron, a Swedish DJ and producer. This project was successfully completed through my freelance service, Quicksleek.",
-      img: "/apaztron_frame.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg",],
-      link: "https://apaztron.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Quicksleek - Freelance Business",
-      des: "At Quicksleek, we specialize in creating modern, responsive, and SEO-friendly websites for smaller local companies in Sweden. Our goal is to enhance their online presence and drive business growth.",
-      img: "/quicksleek_frame.png",
-      iconLists: [,"/re.svg", "/tail.svg", "/ts.svg",],
-      link: "https://quicksleek.se/",
+      title: "Internal Administrative Platform",
+        des: "I was responsible for building an internal platform at Riverty that's now used daily across multiple departments. I worked on both frontend and backend, including architecture, database schema, REST APIs, authentication, role-based access, and CI/CD in Azure DevOps. The platform is still evolving, and I continue to maintain and develop it.",
+      img: "/Riverty_macbook.png",
+      iconLists: ["/csharp.svg", "/dotnet.svg", "/blazor.svg", "/sql.svg"],
+      link: "",
+        cta: "Unavailable",
     },
 
   ];
@@ -78,42 +63,42 @@ export const navItems = [
     },
     {
       id: 2,
-      name: "dotnet",
+      name: ".NET",
       img: "/dotnet.svg",
     },
     {
       id: 3,
-      name: "sql",
+      name: "SQL",
       img: "/sql.svg",
     },
     {
       id: 4,
-      name: "blazor",
+      name: "Blazor",
       img: "/blazor.svg",
     },
     {
       id: 5,
-      name: "next",
+      name: "Next.js",
       img: "/next.svg",
     },
     {
       id: 6,
-      name: "react",
+      name: "React",
       img: "/react.svg",
     },
     {
       id: 7,
-      name: "tailwindcss",
+      name: "Tailwind CSS",
       img: "/tailwindcss.svg",
     },
     {
       id: 8,
-      name: "typescript",
+      name: "TypeScript",
       img: "/typescript.svg",
     },
     {
       id: 9,
-      name: "git",
+      name: "Git",
       img: "/git.svg",
     },
 
