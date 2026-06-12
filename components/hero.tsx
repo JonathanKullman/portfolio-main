@@ -79,7 +79,7 @@ const Hero = () => {
         <RevealY duration={0.5} startPos={0} delay={0.35} once={true}>
           <p className="max-w-3xl mt-6 text-sm md:text-lg text-slate-300 font-normal px-4 leading-relaxed">
             I enjoy turning ideas into stable, user-friendly products and working closely with product and engineering teams.
-            My focus is fullstack delivery with clean collaboration and long-term maintainability.
+            My focus is fullstack delivery with clean collaboration and long-term maintainability, and I have a soft spot for frontend work and polished user experiences.
           </p>
         </RevealY>
       </div>
