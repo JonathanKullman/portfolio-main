@@ -35,7 +35,7 @@ const dummyContent = [
         </div>
       </>
     ),
-    frameworks: ["C#", ".NET", "SQL Server", "Blazor", "Azure", "Azure DevOps"],
+    frameworks: ["C#", ".NET", "SQL", "Blazor", "Azure DevOps", "Pipelines CI/CD"],
   },
   {
     title: "Software Developer Internship (LIA) | 2021 - 2022",
@@ -86,7 +86,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    frameworks: ["C#", ".NET", "SQL", "Agile / Scrum"],
+    frameworks: ["C#", ".NET", "SQL", "React", "Agile / Scrum"],
   },
 ];
 
@@ -128,7 +128,7 @@ const Experience = (props: Props) => {
               </div>
             </RevealX>
             {item.frameworks && (
-              <div className="flex">
+              <div className="mt-4 flex flex-wrap gap-2 pr-1">
                 {item.frameworks.map((framework, index) => (
                   <RevealX
                     key={index}
@@ -137,7 +137,7 @@ const Experience = (props: Props) => {
                     delay={index * 0.25} // Incremental delay for each item
                     once={true}
                   >
-                    <div className="bg-teal-500/90 mt-4 mr-2 text-slate-950 rounded-[8px] font-sans text-sm w-fit px-2 py-0">
+                    <div className="bg-teal-500/90 text-slate-950 rounded-[8px] font-sans text-sm w-fit max-w-full px-2 py-0 whitespace-normal break-words">
                       {framework.split(",").map((item, subIndex) => (
                         <span key={subIndex}>{item.trim()}</span>
                       ))}
