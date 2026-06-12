@@ -1,16 +1,22 @@
 import React from "react";
 
 const MagicButton = ({
-    title, icon, position, handleClick, otherClasses
+    title, icon, position, handleClick, otherClasses, buttonType = "button", ariaExpanded, ariaHaspopup
 }: { 
     title: string; 
     icon: React.ReactNode; 
     position: string; 
     handleClick?: () => void; 
     otherClasses?: string; 
+    buttonType?: "button" | "submit" | "reset";
+    ariaExpanded?: boolean;
+    ariaHaspopup?: "menu" | "dialog" | "listbox" | "tree" | "grid" | "true";
 }) => {
   return (
     <button
+      type={buttonType}
+      aria-expanded={ariaExpanded}
+      aria-haspopup={ariaHaspopup}
       className="w-full relative inline-flex h-12 overflow-hidden rounded-lg 
     p-[1px] focus:outline-none md:w-60 md:mt-10" onClick={handleClick}
     >

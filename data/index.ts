@@ -21,7 +21,7 @@ export const navItems = [
     {
       id: 2,
       title: "Open to software engineering opportunities",
-      description: "Based in Varberg, Sweden. Open to on-site, hybrid, or remote roles where I can contribute to real product outcomes, with a real soft spot for frontend work and building polished interfaces.",
+      description: "Based in Varberg, Sweden. Open to on-site, hybrid, or remote roles, with a particular passion for frontend and polished UI.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",

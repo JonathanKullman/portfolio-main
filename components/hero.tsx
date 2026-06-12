@@ -85,18 +85,14 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative" ref={menuRef}>
       <RevealY duration={0.5} startPos={20} delay={0.6} once={true}>
-      <button
-        type="button"
-        onClick={() => setIsCvMenuOpen((previous) => !previous)}
-        aria-expanded={isCvMenuOpen}
-        aria-haspopup="menu"
-      >
           <MagicButton
           title='Download CV'
           icon={<FaDownload />}
           position='right'
+          handleClick={() => setIsCvMenuOpen((previous) => !previous)}
+          ariaExpanded={isCvMenuOpen}
+          ariaHaspopup="menu"
           />
-      </button>
 
       {isCvMenuOpen && (
         <div
